@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 import { useEffect, useState } from 'react';
 
 // Socket.io connection URL
-const SOCKET_URL = 'https://real-time-communication-with-socket-io-jz6z.onrender.com';
+const SOCKET_URL = 'https://real-time-communication-with-socket-io-s7r6.onrender.com';
 
 // Create socket instance
 export const socket = io(SOCKET_URL, {
