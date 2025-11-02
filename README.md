@@ -1,3 +1,7 @@
+**Live Deployment URL's**
+-**Frontend** : https://realtimesocketiochat.netlify.app/
+-**Backend** : https://real-time-communication-with-socket-io-s7r6.onrender.com
+
 # Real-Time Chat Application with Socket.io
 
 A fully-featured real-time chat application built with React, Express, and Socket.io. This application demonstrates bidirectional communication between clients and server with advanced chat features.
@@ -118,6 +122,7 @@ socketio-chat/
 │   ├── server.js          # Main server file with Socket.io setup
 │   └── package.json       # Server dependencies
 ├── README.md              # This file
+├── screenshots of working app/ #Images of the app
 └── Week5-Assignment.md   # Assignment instructions
 ```
 
@@ -222,6 +227,7 @@ Mobile-specific features:
 
 **Issue**: Server won't start
 - Check if port 5000 is available
+- Check the socket.js or the server.js on how the connection is set up and adjust appropriately, this file currently calls from a live deploy  so you may have to make adjustments. 
 - Verify Node.js version (v18+)
 
 **Issue**: Client can't connect to server
@@ -234,35 +240,13 @@ Mobile-specific features:
 - Check browser console for errors
 
 ## 🚀 Deployment
+**The project has been deployed in two phases. 
 
-### Deploy Server
-Recommended platforms: Render, Railway, Heroku
+_Phase 1: Frontend_
+-Deployed on Netlify
 
-1. Set environment variables:
-   - `PORT` (auto-set by platform)
-   - `CLIENT_URL` (your client URL)
-
-2. Update client `.env`:
-   - `VITE_SOCKET_URL` (your server URL)
-
-### Deploy Client
-Recommended platforms: Vercel, Netlify, GitHub Pages
-
-1. Build the client:
-```bash
-cd client
-npm run build
-```
-
-2. Deploy the `dist` folder
-
-## 📄 License
-
-ISC
-
-## 👥 Credits
-
-Built as part of PLP MERN Stack Week 5 Assignment
+_Phase 2: Backend_
+-Deployed on Render
 
 ## Resources
 
