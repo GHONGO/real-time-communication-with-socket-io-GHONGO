@@ -1,0 +1,99 @@
+.private-chat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  height: 90vh;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.private-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.recipient-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recipient-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.recipient-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.status-text {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.logout-button-small {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.logout-button-small:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.typing-indicator {
+  padding: 8px 24px;
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  min-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .private-chat-header {
+    padding: 12px 16px;
+  }
+  
+  .recipient-info h3 {
+    font-size: 1rem;
+  }
+}
+
